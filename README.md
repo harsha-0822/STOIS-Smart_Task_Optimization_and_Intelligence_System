@@ -108,8 +108,7 @@ or using Live Server:
 
 Paste this inside the textarea in your UI:
 
-## [
-##  {
+## [ {
     "title": "Fix bug",
     "due_date": "2025-12-01",
     "estimated_hours": 2,
