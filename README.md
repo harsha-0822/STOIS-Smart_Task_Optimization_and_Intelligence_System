@@ -74,7 +74,7 @@ task-analyzer/
 
 ---
 
-### 🔧 Installation & Running
+## 🔧 Installation & Running
 
 ### 1️⃣ Clone repository
 git clone https://github.com/harsha-0822/STOIS-Smart_Task_Optimization_and_Intelligence_System
@@ -173,6 +173,7 @@ Paste this inside the textarea in your UI:
 ### 🤖 Suggest Endpoint
 ![Smart](Screenshots/suggest.png)
 
+---
 
 ### 🏁 Conclusion
 
