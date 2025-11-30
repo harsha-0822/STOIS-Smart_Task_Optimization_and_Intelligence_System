@@ -104,25 +104,27 @@ frontend/index.html
 or using Live Server:
 127.0.0.1:5500/frontend/index.html
 
-### 🧩 Sample Input JSON
+## 🧩 Sample Input JSON
 
 Paste this inside the textarea in your UI:
 
-## [ {
+```json
+[
+  {
     "title": "Fix bug",
     "due_date": "2025-12-01",
     "estimated_hours": 2,
     "importance": 7,
     "dependencies": []
-##  },
-##  {
+  },
+  {
     "title": "Prepare report",
     "due_date": "2025-11-29",
     "estimated_hours": 4,
     "importance": 9,
     "dependencies": [1]
-##  },
-## {
+  },
+  {
     "title": "Clean inbox",
     "due_date": "2025-12-10",
     "estimated_hours": 1,
@@ -130,6 +132,7 @@ Paste this inside the textarea in your UI:
     "dependencies": []
   }
 ]
+
 
 ## This demonstrates differences between Smart, Fast, Impact, and Deadline strategies clearly.
 
