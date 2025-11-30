@@ -1,62 +1,50 @@
-Smart Task Optimization & Intelligence System (STOIS)
+# Smart Task Optimization & Intelligence System (STOIS)
 
-A lightweight AI-powered task-ranking engine built using Django + JavaScript, created as part of the Singularium Internship Technical Assignment 2025.
+A lightweight AI-powered task-ranking engine built using **Django** and **JavaScript**, created as part of the **Singularium Internship Technical Assignment 2025**.
 
-This system analyzes tasks, scores them based on urgency, importance, effort, dependencies, and provides intelligent suggestions using multiple strategies — enhanced with date intelligence (weekends + holidays awareness).
+STOIS analyzes tasks, scores them based on urgency, importance, effort, and dependencies, and intelligently recommends the top tasks using multiple strategies — enhanced with **Date Intelligence** (weekend + holiday awareness).
 
-🚀 Features
-✅ Core Features
+---
 
-Intelligent task scoring using:
+## 🚀 Features
 
-Urgency (days left + overdue penalty)
+### ✅ Core Scoring Features
+- Urgency (days left + overdue penalty)
+- Importance weightage
+- Effort score (quick-win detection)
+- Dependencies impact
+- Fully backend-driven ranking API
 
-Importance weightage
+### 🎯 Sorting Strategies
+- **Smart Balance (default)**
+- **Fastest Wins**
+- **High Impact**
+- **Deadline Driven**
 
-Effort score (quick-wins detection)
+### 🧠 Bonus Feature: Date Intelligence
+Automatically boosts urgency when:
 
-Dependencies impact
+| Condition | Effect |
+|----------|--------|
+| Task is overdue | +100 urgency |
+| Due in ≤ 2 days | +50 urgency |
+| Due on Saturday/Sunday | +15 |
+| Due on holiday | +25 |
 
-Multiple sorting strategies:
-
-Smart Balance (default)
-
-Fastest Wins
-
-High Impact
-
-Deadline Driven
-
-Suggest Top 3 button powered by backend scoring logic.
-
-🧠 Bonus Feature: Date Intelligence
-
-Boosts urgency automatically when:
-
-Condition	Effect
-Task is overdue	+100 urgency
-Due date is in 2 days	+50 urgency
-Due date falls on weekend	+15
-Due date is a holiday	+25
-Holidays used
+**Holidays considered:**
 2025-01-01
 2025-01-14
 2025-03-14
 2025-10-02
 
-🧪 Bonus Feature: Unit Tests
 
-Includes automated tests for:
-
-Urgency & overdue scoring
-
-Quick task bonus
-
-Strategy checks (impact > fast, etc.)
-
-Run tests:
-
-python manage.py test
+### 🧪 Bonus Feature: Unit Tests
+Covers:
+- Overdue/urgency scoring
+- Quick task bonus
+- Strategy comparison  
+Run using: 
+- python manage.py test
 
 ### 📁 Project Structure
 task-analyzer/
@@ -72,49 +60,54 @@ task-analyzer/
 │── README.md
 │── manage.py
 
-🖥️ Tech Stack
-Layer	Technology
-Backend	Django, Django REST Framework
-Frontend	HTML, CSS, Vanilla JavaScript
-Testing	Django TestCase
-Extras	Date Intelligence Logic
-🔧 Installation & Running
-1️⃣ Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
+
+---
+
+## 🖥️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Backend | Django, Django REST Framework |
+| Frontend | HTML, CSS, Vanilla JavaScript |
+| Testing | Django TestCase |
+| Extras | Date Intelligence Logic |
+
+---
+
+## 🔧 Installation & Running
+
+### 1️⃣ Clone repository
+git clone https://github.com/harsha-0822/STOIS-Smart_Task_Optimization_and_Intelligence_System
 cd task-analyzer
 
-2️⃣ Create virtual environment
+### 2️⃣ Create virtual environment 
 python -m venv venv
 venv\Scripts\activate     # Windows
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Apply migrations
+### 4️⃣ Apply migrations
 python manage.py migrate
 
-5️⃣ Start backend
+### 5️⃣ Start backend
 python manage.py runserver
 
 
-Backend endpoints:
+### Backend endpoints:
 
 Analyze → http://127.0.0.1:8000/api/tasks/analyze/
-
 Suggest → http://127.0.0.1:8000/api/tasks/suggest/
 
-6️⃣ Open frontend
+### 6️⃣ Open frontend
 
-Open directly:
+### Open directly:
 
 frontend/index.html
-
-
 or using Live Server:
-
 127.0.0.1:5500/frontend/index.html
 
-🧩 Sample Input JSON
+###🧩 Sample Input JSON
 
 Paste this inside the textarea in your UI:
 
@@ -142,7 +135,7 @@ Paste this inside the textarea in your UI:
   }
 ]
 
-This demonstrates differences between Smart, Fast, Impact, and Deadline strategies clearly.
+## This demonstrates differences between Smart, Fast, Impact, and Deadline strategies clearly.
 
 🖼️ Screenshots
 
@@ -177,6 +170,6 @@ This demonstrates differences between Smart, Fast, Impact, and Deadline strategi
 ![Smart](Screenshots/suggest.png)
 
 
-🏁 Conclusion
+### 🏁 Conclusion
 
-STOIS is a fully functional task intelligence engine capable of ranking, scoring, and suggesting tasks using custom heuristics, boosted with holiday/weekend awareness and tested using Django’s unit testing system."# STOIS-Smart_Task_Optimization_and_Intelligence_System" 
+STOIS is a complete task intelligence engine that ranks, scores, and recommends tasks using custom heuristics and date-aware logic — thoroughly validated using Django unit tests.
