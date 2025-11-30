@@ -132,7 +132,6 @@ Paste this inside the textarea in your UI:
     "dependencies": []
   }
 ]
-```
 
 ## This demonstrates differences between Smart, Fast, Impact, and Deadline strategies clearly.
 
