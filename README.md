@@ -58,7 +58,7 @@ Run tests:
 
 python manage.py test
 
-📁 Project Structure
+### 📁 Project Structure
 task-analyzer/
 │── backend/
 │   ├── backend/               # Django configuration
