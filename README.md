@@ -107,11 +107,11 @@ frontend/index.html
 or using Live Server:
 127.0.0.1:5500/frontend/index.html
 
-###🧩 Sample Input JSON
+### 🧩 Sample Input JSON
 
 Paste this inside the textarea in your UI:
 
-[
+##[
   {
     "title": "Fix bug",
     "due_date": "2025-12-01",
