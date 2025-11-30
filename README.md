@@ -109,21 +109,21 @@ or using Live Server:
 Paste this inside the textarea in your UI:
 
 ## [
-  {
+##  {
     "title": "Fix bug",
     "due_date": "2025-12-01",
     "estimated_hours": 2,
     "importance": 7,
     "dependencies": []
-  },
-  {
+##  },
+##  {
     "title": "Prepare report",
     "due_date": "2025-11-29",
     "estimated_hours": 4,
     "importance": 9,
     "dependencies": [1]
-  },
-  {
+##  },
+## {
     "title": "Clean inbox",
     "due_date": "2025-12-10",
     "estimated_hours": 1,
