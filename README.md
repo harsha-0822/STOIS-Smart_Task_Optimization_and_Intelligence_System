@@ -60,9 +60,6 @@ task-analyzer/
 │── README.md
 │── manage.py
 
-
----
-
 ## 🖥️ Tech Stack
 
 | Layer | Technology |
@@ -74,7 +71,7 @@ task-analyzer/
 
 ---
 
-## 🔧 Installation & Running
+### 🔧 Installation & Running
 
 ### 1️⃣ Clone repository
 git clone https://github.com/harsha-0822/STOIS-Smart_Task_Optimization_and_Intelligence_System
@@ -111,7 +108,7 @@ or using Live Server:
 
 Paste this inside the textarea in your UI:
 
-##[
+## [
   {
     "title": "Fix bug",
     "due_date": "2025-12-01",
