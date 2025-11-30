@@ -104,7 +104,7 @@ frontend/index.html
 or using Live Server:
 127.0.0.1:5500/frontend/index.html
 
-## 🧩 Sample Input JSON
+## 🪴 Sample Input JSON
 
 Paste this inside the textarea in your UI:
 
@@ -131,9 +131,11 @@ Paste this inside the textarea in your UI:
     "importance": 5,
     "dependencies": []
   }
-]
+```
 
 ## This demonstrates differences between Smart, Fast, Impact, and Deadline strategies clearly.
+
+---
 
 🖼️ Screenshots
 
