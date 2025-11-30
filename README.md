@@ -47,6 +47,7 @@ Run using:
 - python manage.py test
 
 ### 📁 Project Structure
+```
 task-analyzer/
 │── backend/
 │   ├── backend/               # Django configuration
@@ -59,6 +60,8 @@ task-analyzer/
 │── requirements.txt
 │── README.md
 │── manage.py
+```
+---
 
 ## 🖥️ Tech Stack
 
@@ -94,6 +97,7 @@ python manage.py runserver
 ### Backend endpoints:
 
 Analyze → http://127.0.0.1:8000/api/tasks/analyze/
+
 Suggest → http://127.0.0.1:8000/api/tasks/suggest/
 
 ### 6️⃣ Open frontend
